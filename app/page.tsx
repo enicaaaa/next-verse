@@ -2,11 +2,11 @@ import ExploreBtn from '@/components/ExploreBtn'
 
 const Home = () => {
   return (
+    // Join the NextVerse — your home for all things Next.js.
     <section>
-      <h1 className='text-center'>The Hub for Every Dev <br/> Event You Can´t Miss</h1>
-      <p className='text-center mt-5'>Hackathons, Meetups, Conferences, All in One Place</p>
-
-      <ExploreBtn />
+      <h1 className='text-center uppercase'>Stay in sync.</h1>
+      <p className='text-center m-3 text-xl'>Join the NextVerse — your home for all things Next.js.</p>
+      {/* <ExploreBtn /> */}
     </section>
   )
 }

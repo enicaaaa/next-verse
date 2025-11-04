@@ -14,9 +14,9 @@ const martianMono = Martian_Mono({
 });
 
 export const metadata: Metadata = {
- title: "DevEvent Hub | Discover and Manage Tech Events",
+ title: "NextVerse | The Latest Next.js News, Features & Ecosystem Updates",
   description:
-    "Connect with developers worldwide through events, workshops, and meetups. Find inspiration, share knowledge, and grow your network in one place."
+    "Stay up to date with everything happening in the Next.js ecosystem. NextVerse brings you the latest news, feature releases, tools, tutorials, and insights — all in one place."
 };
 
 export default function RootLayout({
@@ -32,10 +32,10 @@ export default function RootLayout({
         <div className="absolute inset-0 top-0 z-[-1] min-h-screen">
           <LightRays
             raysOrigin="top-center-offset"
-            raysColor="#5dfeca"
+            raysColor="#67b4e0"
             raysSpeed={0.5}
             lightSpread={0.9}
-            rayLength={1.4 }
+            rayLength={1.4}
             followMouse={true}
             mouseInfluence={0.02}
             noiseAmount={0.0}
