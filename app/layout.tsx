@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Schibsted_Grotesk, Martian_Mono } from "next/font/google";
 import LiquidEther from '@/components/ui/liquid-ether/LiquidEther';
 import "./globals.css";
+import Header from "@/components/features/header/Header";
+import Footer from "@/components/features/footer/Footer";
 
 const schibstedGrotesk = Schibsted_Grotesk({
   variable: "--font-schibsted-grotesk",
@@ -30,26 +32,28 @@ export default function RootLayout({
         className={`${schibstedGrotesk.variable} ${martianMono.variable} min-h-screen antialiased`}
       >
         <div className="absolute inset-0 top-0 z-[-1] min-h-screen">
-            <LiquidEther
-              colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
-              mouseForce={20}
-              cursorSize={100}
-              isViscous={false}
-              viscous={30}
-              iterationsViscous={32}
-              iterationsPoisson={32}
-              resolution={0.5}
-              isBounce={false}
-              autoDemo={true}
-              autoSpeed={0.5}
-              autoIntensity={2.2}
-              takeoverDuration={0.25}
-              autoResumeDelay={3000}
-              autoRampDuration={0.6}
-            />
+          <LiquidEther
+            colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
+            mouseForce={20}
+            cursorSize={100}
+            isViscous={false}
+            viscous={30}
+            iterationsViscous={32}
+            iterationsPoisson={32}
+            resolution={0.5}
+            isBounce={false}
+            autoDemo={true}
+            autoSpeed={0.5}
+            autoIntensity={2.2}
+            takeoverDuration={0.25}
+            autoResumeDelay={3000}
+            autoRampDuration={0.6}
+          />
         </div>
         <main>
+          <Header />
           {children}
+          <Footer />
         </main>
       </body>
     </html>
