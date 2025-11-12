@@ -1,5 +1,5 @@
-import React from "react";
 import Link from "next/link";
+import { Github, User } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,14 +12,16 @@ const Footer = () => {
             href="https://github.com/enicaaaa/next-verse"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#b19eef] transition-colors"
+            className="flex justify-between items-center gap-1 hover:text-[#b19eef] transition-colors"
           >
+            <Github size={16}/>
             GitHub
           </Link>
           <Link
             href="mailto:enicaaaa99@gmail.com"
-            className="hover:text-[#b19eef] transition-colors"
+            className="flex items-center gap-1 justify-between hover:text-[#b19eef] transition-colors"
           >
+            <User size={16}/>
             Contact
           </Link>
         </div>
