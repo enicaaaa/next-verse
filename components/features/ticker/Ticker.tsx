@@ -13,7 +13,6 @@ const TICKER_UPDATES = [
 const Ticker = () => {
   return (
     <div className="relative overflow-hidden py-2">
-      {/* Fade mask left/right */}
       <div className="absolute top-0 left-0 h-full w-16 pointer-events-none bg-linear-to-r from-neutral-800 to-transparent" />
       <div className="absolute top-0 right-0 h-full w-16 pointer-events-none bg-linear-to-l from-neutral-800 to-transparent" />
 

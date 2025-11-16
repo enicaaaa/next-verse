@@ -1,11 +1,15 @@
 "use client";
 
 import HeroStat from "@/components/ui/hero-statistic/HeroStat";
-import { Box, FlaskConical, GitBranch, ScanSearch, SquarePlus } from "lucide-react";
-import { useEffect, useState } from "react";
+import { IStat } from "@/lib/types";
+import { ScanSearch, SquarePlus } from "lucide-react";
 import { Typewriter } from "react-simple-typewriter";
 
-const Hero = () => {
+interface IHeroProps {
+  stat: IStat;
+}
+
+const Hero = ({ stat }: IHeroProps) => {
   const slogans = [
     "Fetching latest Next.js updates.", 
     "Compiling insights for developers.", 
@@ -24,11 +28,11 @@ const Hero = () => {
       </p>
 
       <div className="flex gap-3 mb-10 tracking-wide">
-        <button className="flex items-center justify-between gap-2 px-5 py-2.5 rounded-xl bg-[#b19eef] text-black text-sm font-medium hover:bg-[#c6b3ff] transition-colors">
+        <button className="flex items-center justify-between gap-2 px-5 py-2.5 rounded-xl bg-[#b19eef] text-black text-sm font-medium hover:bg-[#c6b3ff] transition-colors whitespace-nowrap">
           <ScanSearch size={16} />
           Explore News
         </button>
-        <button className="flex items-center justify-between gap-2 px-5 py-2.5 rounded-xl border border-neutral-700 text-white text-sm font-medium hover:bg-neutral-800 transition-colors">
+        <button className="flex items-center justify-between gap-2 px-5 py-2.5 rounded-xl border border-neutral-700 text-white text-sm font-medium hover:bg-neutral-800 transition-colors whitespace-nowrap">
           <SquarePlus size={16} />
           Join Community
         </button>
@@ -49,7 +53,7 @@ const Hero = () => {
         </span>
       </button>
 
-      <HeroStat />
+      <HeroStat stat={stat} />
 
       <section className="text-center text-sm text-neutral-400 mb-4 mt-6 flex justify-center gap-1 flex-wrap">
         ⚡ 1,200+ devs staying ahead in Next.js. 
