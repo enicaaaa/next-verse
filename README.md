@@ -89,7 +89,7 @@ Join the NextVerse community soon on:
 
 1. Discord (coming soon)
 2. Newsletter (coming soon)
-3. X (Twitter): @nextverse_dev (reserved)
+3. X (Twitter): [@nextverse_dev](https://x.com/enicaaaa9) (reserved)
 
 ---
 
