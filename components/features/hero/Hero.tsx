@@ -3,6 +3,7 @@
 import HeroStat from "@/components/ui/hero-statistic/HeroStat";
 import { IStat } from "@/lib/types";
 import { ScanSearch, SquarePlus } from "lucide-react";
+import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 
 interface IHeroProps {
@@ -28,10 +29,10 @@ const Hero = ({ stat }: IHeroProps) => {
       </p>
 
       <div className="flex gap-3 mb-10 tracking-wide">
-        <button className="flex items-center justify-between gap-2 px-5 py-2.5 rounded-xl bg-[#b19eef] text-black text-sm font-medium hover:bg-[#c6b3ff] transition-colors whitespace-nowrap">
+        <Link href={"/news"} className="flex items-center justify-between gap-2 px-5 py-2.5 rounded-xl bg-[#b19eef] text-black text-sm font-medium hover:bg-[#c6b3ff] transition-colors whitespace-nowrap" >
           <ScanSearch size={16} />
           Explore News
-        </button>
+        </Link>
         <button className="flex items-center justify-between gap-2 px-5 py-2.5 rounded-xl border border-neutral-700 text-white text-sm font-medium hover:bg-neutral-800 transition-colors whitespace-nowrap">
           <SquarePlus size={16} />
           Join Community
