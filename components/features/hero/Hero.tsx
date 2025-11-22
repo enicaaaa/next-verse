@@ -18,7 +18,7 @@ const Hero = ({ stat }: IHeroProps) => {
     "> welcome to NextVerse"];
 
   return (
-    <section className="flex flex-col items-center justify-center text-center min-h-[75vh] px-6">
+    <section className="flex flex-col items-center justify-center text-center min-h-[75vh] px-5">
       <h1 className="text-3xl sm:text-5xl font-semibold text-white tracking-[0.05em] mb-3">
         Discover what’s <span className="text-[#b19eef] uppercase">Next</span>.
       </h1>
@@ -56,7 +56,7 @@ const Hero = ({ stat }: IHeroProps) => {
 
       <HeroStat stat={stat} />
 
-      <section className="text-center text-sm text-neutral-400 mb-4 mt-6 flex justify-center gap-1 flex-wrap">
+      <section className="text-center text-sm text-neutral-400 mt-6 flex justify-center gap-1 flex-wrap">
         ⚡ 1,200+ devs staying ahead in Next.js. 
         <span className="text-[#b19eef] text-center">
           Free
