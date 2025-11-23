@@ -1,4 +1,5 @@
 import { Calendar } from "lucide-react";
+import { ReactNode } from "react";
 
 type NewsCardProps = {
   icon: string;
@@ -6,6 +7,7 @@ type NewsCardProps = {
   description: string;
   date: string;
   tag: string;
+  children?: ReactNode;
 };
 
 export const NewsCard = ({ icon, title, description, date, tag }: NewsCardProps) => {

@@ -1,5 +1,6 @@
 import { StoryCard } from "@/components/ui/story-card/StoryCard";
 import { MOCK_STORIES } from "@/lib/constants";
+import Link from "next/link";
 
 export default function StoriesPage() {
   return (
@@ -14,7 +15,9 @@ export default function StoriesPage() {
       {/* Stories List */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {MOCK_STORIES.map((item, index) => (
-          <StoryCard key={index} title={item.title} excerpt={item.excerpt} readTime={item.readTime} tag={item.tag} />
+          <Link href={`/stories/${item.slug}`} key={index}>
+            <StoryCard title={item.title} excerpt={item.excerpt} readTime={item.readTime} tag={item.tag} />
+          </Link>
         ))}
       </div>
     </div>

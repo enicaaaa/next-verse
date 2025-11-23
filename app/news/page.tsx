@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge/Badge";
 import { NewsCard } from "@/components/ui/news-card/NewsCard";
 import { MOCK_NEWS } from "@/lib/constants";
+import Link from "next/link";
 
 export default function NewsPage() {
   return (
@@ -20,7 +21,9 @@ export default function NewsPage() {
       {/* News List */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {MOCK_NEWS.map((item, index) => (
-          <NewsCard key={index} icon={item.icon} title={item.title} description={item.description} date={item.date} tag={item.tag} />
+          <Link href={`/news/${item.slug}`} key={index}>
+            <NewsCard icon={item.icon} title={item.title} description={item.description} date={item.date} tag={item.tag} />
+          </Link>
         ))}
       </div>
     </div>
